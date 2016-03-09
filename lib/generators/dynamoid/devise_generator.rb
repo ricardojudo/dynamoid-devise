@@ -1,4 +1,4 @@
-wrequire 'rails/generators/named_base'
+require 'rails/generators/named_base'
 require 'generators/devise/orm_helpers'
 
 module Dynamoid
