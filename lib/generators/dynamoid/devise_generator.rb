@@ -1,4 +1,4 @@
-require 'rails/generators/named_base'
+wrequire 'rails/generators/named_base'
 require 'generators/devise/orm_helpers'
 
 module Dynamoid
@@ -19,7 +19,7 @@ module Dynamoid
       end
 
       def migration_data
-        <<RUBY
+<<RUBY
           ## Database authenticatable
           field :email,              type: String, default: ""
           field :encrypted_password, type: String, default: ""
@@ -48,7 +48,7 @@ module Dynamoid
           # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy is :failed_attempts
           # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
           # field :locked_at,       type: Time
-        RUBY
+RUBY
       end
     end
   end
